@@ -1,4 +1,4 @@
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 
 var txtMsg = document.getElementById("txtMsg")
 var txtOutput = document.getElementById("txtOutput")
