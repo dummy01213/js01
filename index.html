@@ -6,24 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js</title>
+    <script src="https://kit.fontawesome.com/5631c536dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css"></link>
 </head>
 
 <body>
-    <h2 style="margin-top: 30px;">Ai Helper</h2>
-    <textarea id="txtMsg" rows="10" style="margin: 10px; 
+    <nav class="navbar">
+        <a class="navbarItem" id="grammar-icon">
+            <span class="material-symbols-outlined">
+                magic_button</span>
+        </a>
+        <a class="navbarItem" id="summarize-icon">
+            <span class="material-symbols-outlined summarize-icon">
+                summarize</span>
+        </a>
+        <a class="navbarItem" id="notes-icon">
+            <span class="material-symbols-outlined notes-icon">
+                notes</span>
+        </a>
+
+    </nav>
+    <div id="main">
+        <h2 style="margin-top: 30px; color: green" ;><a id="heading"> Ai Helper</a></h2>
+        <textarea id="txtMsg" rows="10" style="margin: 10px; 
     width: 100%;" placeholder="Your Text Here"></textarea>
 
-    <div id="buttonContainer">
-        <div class="btnDiv"><button type="button" class="btn" onclick="correctGrammar()" id="grammar">Fix Grammar</button></div>
-        <div class="btnDiv"><button type="button" class="btn" onclick="summarize()" id="summarize">Summarize</button></div>
-        <div class="btnDiv"><button type="button" class="btn" onclick="makeNotes()" id="notes">Make Notes</button></div>
-    </div>
+        <!-- <div id="buttonContainer">
+            <div class="btnDiv"><button type="button" class="btn" id="grammar">Fix Grammar</button></div>
+            <div class="btnDiv"><button type="button" class="btn" id="summarize">Summarize</button></div>
+            <div class="btnDiv"><button type="button" class="btn" id="notesButton">Make Notes</button></div>
+        </div> -->
 
-    <textarea id="txtOutput" rows="10" style="margin: 10px; 
+        <textarea id="txtOutput" rows="10" style="margin: 10px; 
     width: 100%;" placeholder="Output"></textarea>
-
-    <script src="back.js "></script>
+    </div>
+    <script defer src="back.js "></script>
+    <script defer src="style.js"></script>
 
 
 </body>

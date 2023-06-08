@@ -1,11 +1,68 @@
-* {
+:root {
     font-family: "Courier New", "Lucida Console", monospace;
     color: rgb(17, 213, 17);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(17, 213, 17);
+}
+
+::selection {
+    color: white;
+    background-color: rgb(3, 73, 3);
 }
 
 body {
     background-color: black;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 0;
+    /* Remove margins */
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 8rem;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    align-items: center;
+    max-width: 10%;
+}
+
+.navbarItem {
+    position: relative;
+    display: flex;
+    transition: 1s;
+    height: 6rem;
+    box-sizing: border-box;
+}
+
+.navbarItem:first-child {
+    margin-top: 5rem;
+}
+
+.navbarItem:hover span {
+    color: rgb(5, 239, 5);
+    text-shadow: 2px 2px 4px rgb(69, 246, 69);
+    cursor: pointer;
+}
+
+#main {
+    margin-left: 5rem;
 }
 
 textarea {
@@ -20,25 +77,6 @@ textarea {
     padding: 10px;
     max-width: 90%;
     text-shadow: 3px 3px 5px rgb(17, 213, 17);
-}
-
-.btn {
-    font-size: 1.2em;
-    padding: 5px 8px;
-    background-color: black;
-    color: rgb(17, 213, 17);
-    border: 2px dotted rgb(17, 213, 17);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#buttonContainer {
-    text-align: center;
-}
-
-.btnDiv {
-    display: inline-block;
-    width: 30%;
 }
 
 
