@@ -79,6 +79,24 @@ textarea {
     text-shadow: 3px 3px 5px rgb(17, 213, 17);
 }
 
+#main>div {
+    display: flex;
+    margin: 2rem 6rem;
+}
+
+#main>div>ul {
+    display: flex;
+    font-size: 1.4rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#main>div>ul>li {
+    display: flex;
+    align-items: center;
+}
+
 
 /* width */
 

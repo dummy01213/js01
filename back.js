@@ -1,14 +1,16 @@
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = "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"
 
 var heading = document.getElementById("heading")
 heading.href = "/"
 var txtMsg = document.getElementById("txtMsg")
 var txtOutput = document.getElementById("txtOutput")
+var options = document.getElementById("options")
 txtOutput.style.display = "None"
 
 function useGpt(title, waitingMessage, instruction) {
     // https://www.codeproject.com/Articles/5350454/Chat-GPT-in-JavaScript
 
+    options.style.display = "none"
     var userInput = txtMsg.value
     if (userInput == "") {
         alert("write something")
